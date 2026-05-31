@@ -738,14 +738,11 @@ export default function App() {
 // ─── Mawaqit Embed (inline) ─────────────────────────────────────
 // ─── Mawaqit Embed (inline, Vite-compatible) ─────────────────────────────────────
 function MawaqitEmbed() {
-  // Use relative path - works with proxy or deployed backend
-  const src = '/api/prayer/embed';
-
   return (
     <div style={{ position: 'relative', paddingTop: '56.25%' }}>
       <iframe
         title="Mawaqit"
-        src={src}
+        src="https://mawaqit.net/en/m/moskee-salahaddien-gent-9000-belgium"
         style={{
           position: 'absolute',
           top: 0,
